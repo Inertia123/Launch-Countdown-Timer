@@ -1,16 +1,28 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   font-size: 14px;
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: "Red Hat Text", sans-serif;
 }
 
 body {
   background: #1e1f29;
 }
 
+body main {
+  background: url(../images/bg-stars.svg);
+  background-repeat: no-repeat;
+}
+
 body main header {
-  background-image: url(./images/bg-stars.svg);
   text-align: center;
-  margin-bottom: 25rem;
 }
 
 body main header .container {
@@ -60,8 +72,8 @@ body main header .container .timer-container .num {
   border-radius: 0.5rem;
   font-weight: 900;
   margin-bottom: 0.5rem;
-  -webkit-box-shadow: 0px 4px 8px 2px #191a24;
-          box-shadow: 0px 4px 8px 2px #191a24;
+  -webkit-box-shadow: 4px 4px 8px 2px #191a24;
+          box-shadow: 4px 4px 8px 2px #191a24;
 }
 
 body main header .container .timer-container .what {
@@ -82,6 +94,8 @@ body main footer {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  position: absolute;
+  bottom: 10%;
 }
 
 body main footer .socials {
@@ -103,7 +117,7 @@ body main footer .socials {
   }
   main .container .timer-container .box {
     width: 10rem;
-    height: 9.5rem;
+    height: 10rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
