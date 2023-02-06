@@ -1,5 +1,5 @@
 const countDown = ()=>{
-    const lastDate = new Date("May 10, 2022 24:00:00").getTime();
+    const lastDate = new Date("May 10, 2023 24:00:00").getTime();
     const now = new Date().getTime();
     const difference = lastDate - now;
 
